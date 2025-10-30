@@ -1,1 +1,0 @@
-# -engenheiro-de-software-jr
