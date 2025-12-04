@@ -98,7 +98,17 @@
             transition: all 0.3s ease;
             text-decoration: none;
         }
+        
+        /* Novo estilo para o botão do WhatsApp no cabeçalho */
+        .icon-btn.whatsapp-btn {
+            background: #25d366; /* Cor do WhatsApp */
+        }
 
+        .icon-btn.whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+        
         .icon-btn:hover {
             background: #2563eb;
             transform: translateY(-2px);
@@ -113,6 +123,16 @@
         .icon-btn:hover img {
             filter: brightness(1) invert(1);
         }
+
+        /* Ajuste para o ícone do WhatsApp que já é colorido */
+        .icon-btn.whatsapp-btn img {
+            filter: none;
+        }
+
+        .icon-btn.whatsapp-btn:hover img {
+            filter: brightness(0) invert(1); /* Torna o ícone branco no hover */
+        }
+        /* Fim Ajuste para o ícone do WhatsApp */
 
         /* Main Section */
         .main-section {
@@ -195,6 +215,20 @@
             background: #f0f4f8;
             transform: translateY(-2px);
         }
+
+        /* Novo estilo para o botão do WhatsApp na seção principal */
+        .btn-whatsapp {
+            background: #25d366; /* Cor do WhatsApp */
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+        /* Fim Novo estilo para o botão do WhatsApp na seção principal */
 
         .profile-img {
             width: 100%;
@@ -593,6 +627,9 @@
                 </ul>
             </nav>
             <div class="nav-icons">
+                <a class="icon-btn whatsapp-btn" href="https://wa.me/11978198114" target="_blank" title="WhatsApp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
                 <a class="icon-btn" href="https://github.com/devlucas745" target="_blank" title="GitHub">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                 </a>
@@ -612,6 +649,7 @@
             </p>
             <div class="buttons">
                 <a class="btn btn-primary" href="#contato">💬 Vamos conversar</a>
+                <a class="btn btn-whatsapp" href="https://wa.me/11978198114" target="_blank">🟢 WhatsApp</a>
                 <a class="btn btn-secondary" href="https://github.com/devlucas745" target="_blank">Visualizar GitHub</a>
             </div>
         </div>
